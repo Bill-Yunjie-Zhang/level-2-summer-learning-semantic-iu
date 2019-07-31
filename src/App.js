@@ -1,24 +1,16 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Gallery from './components/ImageGallery'
+import MenuExampleBasic from './components/Menu'
+import Super from './components/Super'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+        <MenuExampleBasic/>
+        <Super />
+        <div className="App">
+          <Gallery perRow={4} count={100}/>
+        </div>
     </div>
   );
 }
