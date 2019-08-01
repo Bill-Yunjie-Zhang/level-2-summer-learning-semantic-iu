@@ -2,7 +2,7 @@ import React from 'react'
 import axios from 'axios'
 import lodash from 'lodash'
 import {Card} from 'semantic-ui-react'
-import IndividualCard from './IndividualCard'
+import IndividualCard1 from './IndividualCard'
 
 class GroupCards extends React.Component {
     constructor(props){
@@ -29,11 +29,12 @@ class GroupCards extends React.Component {
             <Card.Group itemsPerRow={perRow}>
                 {users.map(function(item){
                     return (
-                        <IndividualCard 
+                        <IndividualCard1 
                             key={item.id}
                             name={item.name} 
                             username={item.username}
                             email={item.email}
+                            count={count}
                         />
                     )
                 })}

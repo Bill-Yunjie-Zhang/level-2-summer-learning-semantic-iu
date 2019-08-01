@@ -25,7 +25,7 @@ class ImageGallery extends React.Component {
         const count = this.props.count || 100
         const perRow = this.props.perRow || 6
         const images = lodash.take(this.state.images, count) || []
-        console.log(this.state.images) 
+        // console.log(this.state.images) 
         return (
             <Card.Group itemsPerRow={perRow}>
                 {/* <ImageCard title="test title1" text="test text1" image="https://picsum.photos/200"/> */}
@@ -34,7 +34,7 @@ class ImageGallery extends React.Component {
                         <ImageCard 
                             key={item.id}
                             title={item.title} 
-                            image={item.url}
+                            body={item.body}
                         />
                     )
                 })}
