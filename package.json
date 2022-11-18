@@ -8,7 +8,7 @@
     "react": "^16.8.6",
     "react-cardstack": "^1.1.0",
     "react-dom": "^16.8.6",
-    "react-scripts": "3.0.1",
+    "react-scripts": "5.0.1",
     "react-zmage": "^0.8.4",
     "semantic-ui-react": "^0.87.3"
   },
